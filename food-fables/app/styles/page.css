@@ -1,0 +1,95 @@
+/* Page.module.css */
+.container {
+  margin-top: 0; /* This ensures that there's no additional space above the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligns children to the start of the cross axis */
+  min-height: 100vh; /* This makes the container take at least the full height of the viewport */
+  width: 100%;
+  background-color: white;
+}
+
+
+.title {
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+  
+.horizontalForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+
+.input {
+  flex: 1; /* Adjust this as needed */
+  margin: 0; /* Adjust according to your layout */
+  padding: 10px;
+  border: 1px solid #3b3b3b;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.input-images {
+  flex: 1; /* Adjust this as needed */
+  margin: 0; /* Adjust according to your layout */
+  padding: 10px;
+  font-size: 1em;
+}
+
+.button {
+  flex: 0 1 auto; /* Prevent the button from growing */
+  margin: 0; /* Adjust according to your layout */
+  padding: 10px 20px;
+  background-color: #2f7fff;
+  border-radius: 5px;
+  color: white;
+}
+
+.responseTextbox {
+  width: 80%;
+  height: 350px;
+  padding: 10px;
+  border: 1px solid #3b3b3b;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.loadingContainer {
+  width: 80%; /* Match the textarea width */
+  height: 200px; /* Match the textarea height */
+  padding: 10px;
+  border: 1px solid #3b3b3b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  background-color: white; /* Match the textarea background */
+}
+
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
