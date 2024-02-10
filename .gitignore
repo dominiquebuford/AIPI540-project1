@@ -1,0 +1,4 @@
+.DS_Store
+food-fables-backend/models/veg-classifier.h5.gz
+food-fables-backend/models/veg-classifier.h5
+food-fables-backend/.env
