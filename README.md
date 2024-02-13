@@ -30,5 +30,7 @@ naive_model.py: script to run naive ResNet-18 model.
 
 main_inception_vegetable.py: script to run Inception model
 
-##food-fables and food-fables-backend
+## food-fables and food-fables-backend
 files for UI 
+To run our application, `run flask` in the food-fables-backend directory.
+Then in an another terminal, run `npm run build and then npm start` in the food-fables directory, and watch your vegetables come to life!
